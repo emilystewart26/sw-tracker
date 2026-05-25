@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SW Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>SW Tracker</h1>
+
+<div class="card">
+
+  <label for="food">Choose food</label>
+
+  <select id="food">
+  </select>
+
+  <label for="amount">Amount</label>
+
+  <input
+    type="number"
+    id="amount"
+    placeholder="Enter amount"
+    min="0"
+  />
+
+  <button onclick="addFood()">
+    Add food
+  </button>
+</div>
+
+<div class="card">
+  <div>Healthy Extra A used:</div>
+  <div class="big-number" id="usedPercent">0%</div>
+
+  <div>Remaining:</div>
+  <div class="big-number" id="remainingPercent">100%</div>
+</div>
+
+<div class="card">
+  <h3>Today</h3>
+  <ul id="entries"></ul>
+</div>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
